@@ -1,0 +1,10 @@
+<h2>Number of Students in Each City</h2>
+
+{% if data %}
+    {% for row in data %}
+        <p>City: {{ row.address__city }} — Number of Students: {{ row.total }}</p>
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>No data found</p>
+{% endif %}

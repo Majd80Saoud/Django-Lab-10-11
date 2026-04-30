@@ -1,0 +1,31 @@
+<h1>Clubs List - Task 3</h1>
+
+<a href="{% url 'add_club' %}">Add Club</a>
+
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for club in clubs %}
+    <tr>
+        <td>{{ club.id }}</td>
+        <td>{{ club.name }}</td>
+        <td>
+            {% if club.image %}
+                <img src="{{ club.image.url }}" width="100">
+            {% endif %}
+        </td>
+        <td>
+            <a href="{% url 'edit_club' club.id %}">Edit</a>
+            |
+            <a href="{% url 'delete_club' club.id %}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

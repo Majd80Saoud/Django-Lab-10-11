@@ -1,0 +1,11 @@
+<h1>Edit Book - Part 2</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Update</button>
+</form>
+
+<br>
+<a href="{% url 'list_books_part2' %}">Back</a>

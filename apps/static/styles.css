@@ -1,0 +1,14 @@
+.topnav {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+.topnav a {
+  color: #000000;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  color: #008CBA;
+}
