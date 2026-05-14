@@ -24,7 +24,7 @@ urlpatterns = [
    #path('index2/<int:vall>/' , apps.bookmodule.views.index2),
 
     path('books/', include("apps.bookmodule.urls")),
-   # path('users/', include("apps.usermodule.urls")),
+    path('users/', include("apps.usermodule.urls")),
 ]
 
 from django.conf import settings

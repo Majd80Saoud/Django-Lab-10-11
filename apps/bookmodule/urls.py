@@ -7,7 +7,7 @@ urlpatterns = [
    
     path('', views.index, name='index'),
     path('list/', views.list_books, name='list_books'),
-   # path('about/', views.aboutus, name='aboutus'),
+    path('about/', views.aboutus, name='aboutus'),
 
    # path('html5/lab5/', views.lab5, name='lab5'),
 
